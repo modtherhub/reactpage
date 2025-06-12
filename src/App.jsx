@@ -6,7 +6,7 @@ import AboutPage from '/home/modther/Project/reactpage/src/components/pages/Abou
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
